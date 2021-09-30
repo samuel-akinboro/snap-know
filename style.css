@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+.banner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner .info{
+    background-color: rgb(244, 244, 244);
+    flex: 1;
+    display: grid;
+    place-content: center;
+}
+
+.banner .logo{
+    width: 100px;
+    height: 100px;
+    margin: -50px auto 50px;
+    display: flex;
+}
+
+.banner .image{
+    flex: 1;
+    background: rgba(0,0,0,0.2) url(bg.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    width: 100%;
+}
+
+.features .image{
+    flex: 1;
+    background: rgba(0,0,0,0.2) url(bg.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    width: 100%;
+}
+
+.banner h1{
+    color: #f17442;
+    margin: 30px 0;
+    font-size: 36px;
+}
+
+.banner p{
+    color: #4d4b4b;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.banner .container{
+    padding: 1.5em;
+    width: 80%;
+    line-height: 1.5em;
+    padding-left: 2.5em;
+}
+
+.icons div{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    margin: 0 10px;
+}
+
+.icons{
+    display: flex;
+    margin-top: 70px;
+}
+
+.icons div{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons .f{
+    background-color: rgb(53, 53, 247);
+}
+
+.icons .t{
+    background-color: rgb(53, 53, 247);
+}
+
+.icons .p{
+    background-color: rgb(53, 53, 247);
+}
+
+.icons .b{
+    background-color: rgb(53, 53, 247);
+}
+
+.icons .r{
+    background-color: rgb(53, 53, 247);
+}
+
+.banner .image{
+    display: grid;
+    place-content: center;
+}
+
+.banner .counter{
+    display: flex;
+}
+
+.banner .card{
+    background-color: rgb(56, 56, 56);
+    padding: 1em;
+    margin: 0 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
+
+.features{
+    background-color: rgb(20, 20, 20);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.features .container{
+    flex: 0.40;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+}
+
+.features h2{
+    text-align: center;
+    color: rgb(244, 111, 63);
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+.features .image{
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 0.60;
+    background-position: left;
+}
+
+.features .feature{
+    width: 80%;
+    margin: 10px auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.feature h3{
+    margin: 10px 0;
+    color: coral;
+}
+
+.feature p{
+    margin-bottom: 50px;
+    width: 90%;
+    line-height: 1.4em;
+}
+
+.team{
+    padding: 2em 0;
+    background: rgb(206, 205, 205);
+    width: 100%;
+}
+
+.team .container{
+    display: grid;
+    place-content: center;
+}
+
+.members{
+    display: flex;
+    padding: 1.5em;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.team h2{
+    text-align: center;
+    padding: 10px 0;
+    padding-top: 40px;
+    text-shadow: 0px 0px 8px rgb(83, 82, 82);
+    font-size: 1.8em;
+}
+
+.member{
+    width: 200px;
+    margin: 10px 20px;
+    color: black;
+    box-shadow: 0px 0px 8px rgb(99, 97, 97);
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.member:hover, .icons div:hover {
+    transform: scale(1.1);
+}
+
+.member img{
+    width: 100%;
+}
+
+.member .image{
+    height: 150px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.member h6{
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer{
+    background: black;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 970px){
+    .banner .container{
+        padding-top: 50px;
+    }
+
+    .banner h1{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .banner .icons{
+        margin-top: 30px;
+    }
+
+    .banner{
+        margin-bottom: 1.9em;
+    }
+}
+
+@media only screen and (max-width: 804px){
+    .banner .icons div{
+        margin: 0 5px;
+    }
+
+    .banner{
+        margin-bottom: 0em;
+    }
+
+    .counter .card{
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+   
+}
